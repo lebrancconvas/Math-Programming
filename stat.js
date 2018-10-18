@@ -43,11 +43,11 @@ function Stat() {
     }
 
     this.maxi = function() {
-        return Math.max(data)
+        return Math.max(...data)
     }
 
     this.mini = function () {
-        return Math.min(data)
+        return Math.min(...data)
     }
 
     this.range = function() {
@@ -68,5 +68,3 @@ console.log(browser.leng())
 console.log(browser.maxi())
 console.log(browser.mini())
 console.log(browser.range())
-
-
