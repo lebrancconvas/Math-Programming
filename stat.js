@@ -21,9 +21,9 @@ function Stat() {
 
     this.sum = function() {
         let s = 0
-        for(let i = 0 ; i < data.length ; i++) {
-            s += data[i]
-        }
+        data.forEach(el => {
+            s += el
+        })
         return s
     }
 
