@@ -32,14 +32,26 @@ function Stat() {
     }
 
     this.median = function() {
-        if(data.length % 2 == 0) {
+        if(data.length % 2 === 0) {
             medindex = data.length / 2
             return ((data[medindex - 1] + data[medindex]) / 2)
         }
-        else if(data.length % 2 != 0) {
+        else if(data.length % 2 !== 0) {
             medindex = Math.ceil(data.length / 2)
             return data[medindex-1]
         }
+    }
+
+    this.maxi = function() {
+        return Math.max(data)
+    }
+
+    this.mini = function () {
+        return Math.min(data)
+    }
+
+    this.range = function() {
+        return this.maxi() - this.mini()
     }
 }
 
@@ -48,10 +60,13 @@ browser.addData(1)
 browser.addData(2)
 browser.addData(3)
 browser.addData(4)
-browser.delData(3)
 console.log(browser.disPlay())
 console.log(browser.sum())
 console.log(browser.mean())
 console.log(browser.median())
 console.log(browser.leng())
+console.log(browser.maxi())
+console.log(browser.mini())
+console.log(browser.range())
+
 
