@@ -1,0 +1,8 @@
+{
+  "name": "Math-Programming",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lebrancconvas/Math-Programming.git",
+  "author": "Lebranc Convas <33986491+lebrancconvas@users.noreply.github.com>",
+  "license": "MIT"
+}
